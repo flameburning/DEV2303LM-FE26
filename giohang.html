@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="stylesheet" href="../ADACHI,LTD/css/giohang.css">
+    
+</head>
+<body>
+     <!-- header -->
+
+     <header>
+        <a href="../ADACHI,LTD/Trangchu.html" class="logo"> 
+            <img src="../ADACHI,LTD/images/Logo.png" alt="Ảnh">
+        </a>  
+        <div class="group">
+            <ul class="navigation">
+                <li class="item"><a href="../ADACHI,LTD/sanpham-1.html">Sản phẩm</a></li>
+                    <li><a href="../ADACHI,LTD/diemban.html">Điểm bán</a></li>
+                    <li><a href="../ADACHI,LTD/camnang.html">Cẩm nang</a></li>
+                    <li><a href="../ADACHI,LTD/hoidap.html">Hỏi đáp</a></li>
+                    <li><a href="../ADACHI,LTD/sukien.html">Sự kiện</a></li>
+                    <li><a href="../ADACHI,LTD/baochinoivechungtoi.html">Báo chí nói về chúng tôi</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <i class="fas fa-search" class="searchBtn"></i>
+                    <i class="fa-solid fa-xmark" class="closeBtn"></i>
+                </span>
+            </div>    
+            <span class="menuToggle"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Tìm kiếm">
+        </div>
+    </header>
+    <!-- end -->
+    <section class="product">
+        <div class="container-gh">
+            <div class="rowww">
+                <div class="col-6">
+                    <button type="button" class="btn success" onclick="getQlty()">Tính tiền</button>
+                </div>
+                <div class="col-6">
+                    Tổng tiền là :<span id="total-price">0</span> <span>VND</span>
+                </div>
+            </div>
+            <div class="roww-gh" id="list-card">
+                <div class="layout">
+                    <div class="sp2">
+                            <img src="../ADACHI,LTD/images/Group sp-1.png" alt="sp-2">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Thực phẩm bảo vê sức khỏe SPECIAL KID VITAPROLIS</h3>
+                        <p class="card-text">Bổ sung dưỡng chất cần thiết, có ích cho thị giác,giúp tăng cường thị lực cho mắt,hỗ trợ phòng ngừa cận thị, mỏi mắt,khô mắt.Sản phẩm sử dụng cho các trẻ bị cận, trẻ có thị lực kém, hay mỏi mắt, khô mắt do thiếu dưỡng chất.</p>
+                        
+                        <div class="giathanh">
+                            <div>
+                                Giá thành sản phẩm:250 000 <span>VND</span>
+                            </div>
+                            <input type="number" id="qlty">
+                        </div>
+                    </div>
+                </div> 
+               
+            </div>
+        </div>  
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>   
+    </section>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="dc">
+                    <h4>CÔNG TY TNHH TƯ VẤN ĐẦU TƯ QUẢN LÝ THƯƠNG MẠI VÀ DỊCH VỤ ADACHI </h4>
+                    <br>
+                    <p>
+                        Địa chỉ: Số 75,ngõ 80,phố Ngụy Như Kon Tum,Phường Nhân Chính,Quận Thanh Xuân,Tp.Hà Nội <br>
+                        Chăm sóc KH: <a href="024 66598939">024 66598939</a> <br>
+                        Hotline: <a href="0901849396/0977703938">0901849396/0977703938</a> <br>
+                        Email: <a href="honghue2512@gmail.com">honghue2512@gmail.com</a><br>
+                    </p>
+                </div>
+                <span class="icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </span> 
+            </div>
+
+            <div class="col-4">
+                <h4>DANH MỤC</h4>
+                <ul>
+                    <li><a href="../ADACHI,LTD/sanpham-1.html"><i class="fa-solid fa-caret-up fa-rotate-90"></i> Sản phẩm</a></li>
+                    <li><a href="../ADACHI,LTD/diemban.html"><i class="fa-solid fa-caret-up fa-rotate-90"></i> Điểm bán</a></li>
+                    <li><a href="../ADACHI,LTD/camnang.html"><i class="fa-solid fa-caret-up fa-rotate-90"></i> Cẩm nang </a></li>
+                    <li><a href="../ADACHI,LTD/hoidap.html"><i class="fa-solid fa-caret-up fa-rotate-90"></i> Hỏi đáp </a></li>
+                    <li><a href="../ADACHI,LTD/sukien.html"><i class="fa-solid fa-caret-up fa-rotate-90"></i> Sự kiện </a></li>
+                    <li><a href="../ADACHI,LTD/baochinoivechungtoi.html"><i class="fa-solid fa-caret-up fa-rotate-90"></i>Báo chí nói về chúng tôi</a></li>
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <h4>FACEBOOK</h4>
+                <img src=".//images/Facebook.png" alt="face">
+            </div>
+        </div>
+        <div class="support">
+            <img style="margin-top:16px;margin-left:100px" src="../ADACHI,LTD/images/Copyright ©  ADACHI., JSC. All Rights Reserved.png" alt="0">
+            <button class="btn-2">
+              <img  src="../ADACHI,LTD/images/operator_support_boy-512.png" alt="8">
+                TƯ VẤN HỖ TRỢ
+                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+            </button>
+      </div>
+    </div>
+</footer> 
+<!-- end -->
+<script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+
+
+<script src="../ADACHI,LTD/js/giohang.js"></script>
+<script src="../ADACHI,LTD/js/sanpham-2.js"></script>
+<script src="../ADACHI,LTD/js/sanpham-3.js"></script>
+</body>
+</html>
